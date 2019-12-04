@@ -1,10 +1,9 @@
 Instructions for running my website.
 
-The website itself is stored in the 'connect' folder.
 
 - In order to run the site, firstly you must enter the test folder, then the bin folder, and type 'source activate' to start flask.
 
-- Then, enter the connect folder and type the following commands to set up flask.
+- Then, enter the folder containing the files and type the following commands to set up flask.
 - export FLASK_ENV=development to set the environment.
 - export FLASK_APP=server.py to set the file flask should boot from.
 - python init_db.py to initialize the database.
