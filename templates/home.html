@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="jumbotron text-center">
+	<h1> Project Ripper</h1>
+	<p class="lead">On the homepage you will find the most recent forum post written by a user - if any posts exist! </p>
+</div>
+<form method="POST" action="">
+	<div class="form-group">
+		<label> {{posted_by}}</label></br>
+		</br></br>
+		<textarea rows="5" cols="80"> {{post_content}}</textarea></br>
+		</br></br></br>
+	
+	<div class="button">
+	<button onclick="location.href='http://webtech-46.napier.ac.uk:5000/forums'" class="btn btn-primary" type="button">Write your own forum post</button>
+	</div>
+	</div>
+</form>
+	<style>
+	.head {padding-top:40px;}
+	.form-group {
+		margin-left: 25%;
+		margin-right: 25%;
+		width:50%;
+	}
+	h2{text-align: center;}
+	.button{text-align:center; color: black;}
+	</style>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class = "register">
+<h2> Register Your Account</h2>
+</div>
+{% from "/includes/formhelpers.html" import render_field %}
+
+<form method = "POST" action="">
+	<div class="form-group">
+		{{render_field(form.name, class_="form-control")}}
+	</div>
+	<div class="form-group">
+		{{render_field(form.email, class_="form-control")}}
+	</div>
+	<div class="form-group">
+		{{render_field(form.username, class_="form-control")}}
+	</div>
+	<div class="form-group">
+		{{render_field(form.password, class_="form-control")}}
+	</div>
+	<div class="form-group">
+		{{render_field(form.confirm, class_="form-control")}}
+	</div>
+	<div class ="button">
+	<p><input type ="submit" class="btn btn-primary" value="Submit"></p>
+	</div>	
+	<style>
+		.register {padding-top:40px;}
+		.form-group {
+			margin-left: 25%;
+			margin-right: 25%;
+			width:50%;
+		}
+		h2{text-align: center;}
+		.button{text-align:center;}
+	</style>
+</form>
+{% endblock %}

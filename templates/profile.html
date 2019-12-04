@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="head">
+	<h2>Profile Editor</h2></br></br>
+	<h2>Click the button below to delete your profile</h2></br></br>
+</div>
+
+<form method="POST" action="">
+	<div class="form-group">
+	</div>
+	<div class="button">
+	<button type="submit" class="btn btn-danger">DELETE PROFILE</button>
+	</div>
+	<style>
+	.head {padding-top:40px;}
+	.form-group {
+		margin-left: 25%;
+		margin-right: 25%;
+		width:50%;
+	}
+	h2{text-align: center;}
+	.button{text-align:center;}
+	</style>
+</form>
+{% endblock %}

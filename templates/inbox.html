@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="jumbotron text-center">
+	<h2>Inbox</h2></br>
+	<h4>This page will allow you to look at the latest message to be sent to your profile.</h4>
+</div>
+</br></br>
+<form method="POST" action="">
+	<div class="form-group">
+		<label>You recieved a message from this username:</label></br>
+		{{message_from}}
+		</br></br></br>
+		<label>Message contains:</label></br>
+		{{message_content}}
+		</br></br></br></br></br></br></br>
+	</div>
+	<div class="button">
+	<button type="submit" class="btn btn-primary">Check Newest Message</button>
+</form>
+	<button onclick="location.href='http://webtech-46.napier.ac.uk:5000/send_message'" class="btn btn-primary" type="button">Reply</button>
+	</div>
+	<style>
+	.head {padding-top:40px;}
+	.form-group {
+		margin-left: 25%;
+		margin-right: 25%;
+		width:50%;
+	}
+	h2{text-align: center;}
+	.button{text-align:center; color: black;}
+	</style>
+{% endblock %}

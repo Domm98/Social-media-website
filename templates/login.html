@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="head">
+	<h2>Login</h2>
+</div>
+
+<form method="POST" action="">
+	<div class="form-group">
+		<label>Username</label><input type ="text" name="username" class="form-control" value={{request.form.username}}>
+	</div>
+	<div class="form-group">
+	<label>Password</label><input type="password" name="password" class="form-control" value={{request.form.password}}>
+	</div>
+	<div class="button">
+	<button type="submit" class="btn btn-primary">Submit</button>
+	</div>
+	<style>
+	.head {padding-top:40px;}
+	.form-group {
+		margin-left: 25%;
+		margin-right: 25%;
+		width:50%;
+	}
+	h2{text-align: center;}
+	.button{text-align:center;}
+	</style>
+</form>
+{% endblock %}
