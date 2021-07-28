@@ -1,5 +1,4 @@
-Instructions for running my website.
-
+Instructions for running this social media mock-up:
 
 - In order to run the site, firstly you must enter the test folder, then the bin folder, and type 'source activate' to start flask.
 
